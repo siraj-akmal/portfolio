@@ -8,18 +8,18 @@ export default function Home() {
         <div className="text-center max-w-3xl">
           <div className="relative w-96 h-96 mx-auto mb-8">
             <Image
-              src="https://placehold.co/800x800/1a1a1a/ffffff/png?text=Profile"
+              src="/images/profile.jpg"
               alt="Profile Picture"
               fill
               className="rounded-full object-cover border-4 border-blue-500"
+              priority
             />
           </div>
           <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            Data-Driven Solutions for Business Growth
+            Siraj Akmal&apos;s Website
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-            I transform complex data into actionable insights, helping businesses make informed decisions
-            through data analysis, visualization, and strategic recommendations.
+            Hi! I&apos;m Siraj Akmal. I study Data Science and Business at Northeastern University. I created this website as a side project! Feel free to explore and let me know if you find any bugs!
           </p>
           <div className="flex gap-4 justify-center">
             <Link

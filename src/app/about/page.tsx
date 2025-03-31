@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'About Me | Personal Portfolio',
@@ -11,13 +12,19 @@ export default function AboutPage() {
       <h1 className="text-4xl font-bold mb-8">About Me</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="space-y-6">
+          <div className="relative w-full aspect-square max-w-md mx-auto mb-8">
+            <Image
+              src="/images/profile.jpg"
+              alt="Profile picture"
+              fill
+              className="rounded-full object-cover"
+              priority
+            />
+          </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-gray-600 dark:text-gray-300">
-              I&apos;m a data science and business analytics professional with a passion for transforming
-              complex data into actionable insights. My expertise lies in developing predictive models,
-              creating interactive visualizations, and providing data-driven recommendations to drive
-              business growth.
+            Hi there! I&apos;m Siraj, a Business Administration and Data Science student at Northeastern University focusing on Finance. I&apos;ve gained valuable experience through co-ops at Arrowstreet Capital and Man Group, where I've worked on process optimization and data analysis. At Northeastern, I've taken leadership roles coordinating campus events and managing substantial budgets. Outside of the academic and professional world, I enjoy DJing, trying every restaurant in Boston, spending time with friends, and playing mahjong.
             </p>
           </div>
           <div>
@@ -45,12 +52,19 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="space-y-6">
-          <div>
-            <h2 className="text-2xl font-semibold mb-4">Education</h2>
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Education</h2>
             <div className="space-y-4">
               <div>
-                <h3 className="font-medium">University Name</h3>
-                <p className="text-gray-600 dark:text-gray-300">B.S. in Data Science and Business Analytics • 2018 - 2022</p>
+                <h3 className="text-xl font-semibold">Northeastern University</h3>
+                <p className="text-gray-600 dark:text-gray-300">2021 - 2025</p>
+                <p className="text-gray-600 dark:text-gray-300">B.S. in Data Science and Business Administration</p>
+                <p className="text-gray-600 dark:text-gray-300">Concentration in Finance</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold">Livingston High School</h3>
+                <p className="text-gray-600 dark:text-gray-300">Livingston, NJ</p>
+                <p className="text-gray-600 dark:text-gray-300">2017 - 2021</p>
               </div>
             </div>
           </div>
