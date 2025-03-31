@@ -7,6 +7,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold mb-8">About Me</h1>
@@ -14,7 +16,7 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div className="relative w-full aspect-square max-w-md mx-auto mb-8">
             <Image
-              src="/images/profile.JPG"
+              src={`${basePath}/images/profile.JPG`}
               alt="Profile picture"
               fill
               className="rounded-full object-cover"

@@ -2,13 +2,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Home() {
+  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+  
   return (
     <div className="container mx-auto px-4 py-8">
       <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className="text-center max-w-3xl">
           <div className="relative w-96 h-96 mx-auto mb-8">
             <Image
-              src="/images/profile.JPG"
+              src={`${basePath}/images/profile.JPG`}
               alt="Profile Picture"
               fill
               className="rounded-full object-cover border-4 border-blue-500"
