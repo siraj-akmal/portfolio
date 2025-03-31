@@ -10,7 +10,7 @@ export default function Home() {
         <div className="text-center max-w-3xl">
           <div className="relative w-96 h-96 mx-auto mb-8">
             <Image
-              src={`${basePath}/images/profile.jpg`}
+              src={`${basePath}/images/profile.jpeg`}
               alt="Profile Picture"
               fill
               className="rounded-full object-cover border-4 border-blue-500"

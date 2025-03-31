@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div className="relative w-full aspect-square max-w-md mx-auto mb-8">
             <Image
-              src={`${basePath}/images/profile.jpg`}
+              src={`${basePath}/images/profile.jpeg`}
               alt="Profile picture"
               fill
               className="rounded-full object-cover"
