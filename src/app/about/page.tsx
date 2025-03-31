@@ -14,18 +14,17 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div className="relative w-full aspect-square max-w-md mx-auto mb-8">
             <Image
-              src="/images/profile.JPG"
+              src="/images/profile.jpg"
               alt="Profile picture"
-              width={200}
-              height={200}
-              className="rounded-full object-cover border-4 border-blue-500"
+              fill
+              className="rounded-full object-cover"
               priority
             />
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-gray-600 dark:text-gray-300">
-            Hi there! I&apos;m Siraj, a Business Administration and Data Science student at Northeastern University focusing on Finance. I&apos;ve gained valuable experience through co-ops at Arrowstreet Capital and Man Group, where I&apos;ve worked on process optimization and data analysis. At Northeastern, I&apos;ve taken leadership roles coordinating in several clubs. Outside of the academic and professional world, I enjoy DJing, trying every restaurant in Boston, spending time with friends, and playing mahjong.
+            Hi there! I&apos;m Siraj, a Business Administration and Data Science student at Northeastern University focusing on Finance. I&apos;ve gained valuable experience through co-ops at Arrowstreet Capital and Man Group, where I've worked on process optimization and data analysis. At Northeastern, I've taken leadership roles coordinating campus events and managing substantial budgets. Outside of the academic and professional world, I enjoy DJing, trying every restaurant in Boston, spending time with friends, and playing mahjong.
             </p>
           </div>
           <div>

@@ -8,11 +8,10 @@ export default function Home() {
         <div className="text-center max-w-3xl">
           <div className="relative w-96 h-96 mx-auto mb-8">
             <Image
-              src="/images/profile.JPG"
-              alt="Profile picture"
-              width={96}
-              height={96}
-              className="rounded-full border-4 border-blue-500 mx-auto"
+              src="/images/profile.jpg"
+              alt="Profile Picture"
+              fill
+              className="rounded-full object-cover border-4 border-blue-500"
               priority
             />
           </div>
