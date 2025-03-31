@@ -14,7 +14,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-gray-600 dark:text-gray-300">
-              I'm a data science and business analytics professional with a passion for transforming
+              I&apos;m a data science and business analytics professional with a passion for transforming
               complex data into actionable insights. My expertise lies in developing predictive models,
               creating interactive visualizations, and providing data-driven recommendations to drive
               business growth.
