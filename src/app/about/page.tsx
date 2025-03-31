@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div className="relative w-full aspect-square max-w-md mx-auto mb-8">
             <Image
-              src="/portfolio/images/profile.JPG"
+              src="/images/profile.JPG"
               alt="Profile picture"
               width={200}
               height={200}
