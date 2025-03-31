@@ -14,10 +14,11 @@ export default function AboutPage() {
         <div className="space-y-6">
           <div className="relative w-full aspect-square max-w-md mx-auto mb-8">
             <Image
-              src="/images/profile.jpg"
+              src="/portfolio/images/profile.JPG"
               alt="Profile picture"
-              fill
-              className="rounded-full object-cover"
+              width={200}
+              height={200}
+              className="rounded-full object-cover border-4 border-blue-500"
               priority
             />
           </div>
