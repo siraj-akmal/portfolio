@@ -38,7 +38,7 @@ const ProjectCard = ({ title, description, imageUrl, tags, index, link }: {
       variants={cardVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden"
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-110 hover:shadow-2xl"
     >
       <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="relative h-48 w-full">
@@ -75,18 +75,26 @@ export default function ProjectsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <motion.h1 
-        className="text-4xl font-bold mb-12 text-center"
+        className="text-4xl font-bold mb-4 text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         Featured Projects
       </motion.h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.h2 
+        className="text-lg font-medium mb-12 text-center text-gray-600 dark:text-gray-400"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Click to learn more about each project!
+      </motion.h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         <ProjectCard
           title="Onboarding RAG Chatbot"
           description="Built a full-stack application that allows users to upload documents, which are automatically chunked and stored in a vector database for semantic search. Integrated an Ollama-hosted local LLM to enable users to ask questions and receive context-aware answers based on the uploaded content."
-          imageUrl="https://png.pngtree.com/png-clipart/20230401/original/pngtree-smart-chatbot-cartoon-clipart-png-image_9015126.png"
+          imageUrl="https://img.freepik.com/premium-vector/robot-chat-chat-bot-logo-modern-conversation-automatic-technology-logo-design-vector-template_148524-1362.jpg?semt=ais_hybrid&w=740"
           tags={["Ollama", "AI", "Redis", "Python"]}
           index={0}
           link="https://github.com/siraj-akmal/RAG-onboarding"
@@ -95,9 +103,9 @@ export default function ProjectsPage() {
           title="Boston Weather Prediction"
           description="We built a weather prediction tool using machine learning and time series models on four years of Boston weather data. An MLP classified rainy days with 83% accuracy, while AR/MA models forecasted monthly rainfall trends. We also created an interactive website to display our findings and visualizations."
           imageUrl="https://res.cloudinary.com/simpleview/image/upload/v1699908801/clients/boston-redesign/6ETOS4g0_c4045e9b-d897-4012-8d4c-4ba218d7a389.jpg"
-          tags={["MLP", "Machine","Time Series","Python"]}
+          tags={["MLP", "Machine Learning","Time Series","Python"]}
           index={1}
-          link="https://github.com/adammotts/WeatherPrediction"
+          link="https://weather-prediction-visuals.vercel.app/"
         />
         <ProjectCard
           title="AWS Financial Data Pipeline"
@@ -118,7 +126,7 @@ export default function ProjectsPage() {
         <ProjectCard
           title="NBA Salary Prediction"
           description="Developed an interactive dashboard to predict NBA player salaries using season statistics. Built four regression models with scikit-learn, visualized results with Plotly, and deployed the app using Dash and HTML. Included a salary calculator where users input stats to receive predictions from the best-performing model.."
-          imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMpEOs03-96oUptCBZu7SJ2tcLslO6pNR6Og&s"
+          imageUrl="https://wallpapercat.com/w/full/c/f/b/210824-1920x1080-desktop-1080p-lebron-james-background-photo.jpg"
           tags={["Machine Learning", "Python", "Random Forsest Rgression"]}
           index={4}
           link="https://drive.google.com/file/d/1hW6szHNDbxHf2Z-tHUzBBZ7v-3KouKGu/view?usp=sharing"

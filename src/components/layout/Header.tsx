@@ -32,8 +32,8 @@ const Header = () => {
             <Link href="/projects" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
               Projects
             </Link>
-            <Link href="/extracurriculars" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
-              Extracurriculars
+            <Link href="/leadership-involvement" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
+              Leadership & Involvement
             </Link>
             <Link href="/experience" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
               Experience
@@ -55,4 +55,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

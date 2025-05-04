@@ -77,7 +77,7 @@ export default function LeadershipInvolvementPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Leadership & Involvement
+        Extracirriculars
       </motion.h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ActivityCard
@@ -88,17 +88,17 @@ export default function LeadershipInvolvementPage() {
           index={0}
         />
         <ActivityCard
-          title="Asian American Heritage Month"
+          title="Asian American Hertiage Month"
           description="As Co-Chair, I led Northeastern’s annual celebration of Asian American identity for the undergraduate community. I managed a $45,000 budget, organized large-scale cultural, educational, and social events, and collaborated with student organizations and campus partners to showcase the diversity of Asian American experiences."
-          imageUrl="https://media.licdn.com/dms/image/v2/C4E1BAQEMzFYeq252CQ/company-background_10000/company-background_10000/0/1590984663714/grcglobalgroup_cover?e=2147483647&v=beta&t=Td64SslYfO0vMq9qTi8wsTFyDJLnKYIC14JW1yLD8Cw"
-          tags={["Event Planning", "Contract Negotiation", "Budgeting"]}
+          imageUrl="https://asianamericancenter.northeastern.edu/wp-content/uploads/2023/01/AAHM-logo-725x1024.png"
+          tags={["Event Planning", "Contract Negotiation", "BUdgeting"]}
           index={1}
         />
         <ActivityCard
-          title="Global Research and Consulting"
-          description="As an Insights Researcher, I wrote articles exploring global trends and social impact topics. I also supported ongoing consulting projects by contributing research and background materials to help inform client strategies."
+          title="Tech Innovation Hub"
+          description="Co-founded a student-led initiative to explore emerging technologies and their business applications."
           imageUrl="https://placehold.co/600x400/1a1a1a/ffffff/png?text=Innovation"
-          tags={["Technical Writing", "Research"]}
+          tags={["Innovation", "Technology", "Project Management"]}
           index={2}
         />
         <ActivityCard
